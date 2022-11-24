@@ -73,7 +73,6 @@ p {
 section.hero {
   height: calc(100vh - var(--header-height));
   position: relative;
-  background-color: var(--bg-dark);
 }
 
 #dev {
@@ -81,8 +80,12 @@ section.hero {
 }
 
 section.hero .content {
+  background-color: var(--bg-dark);
   text-align: center;
   padding-top: 150px;
+}
+
+section.hero .content > * {
   animation: heroAnimation ease-in-out 1s;
 }
 
@@ -153,7 +156,7 @@ section.hero .content {
 }
 
 .hidable > * {
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 /* Assets */
@@ -162,12 +165,10 @@ section.hero .content {
   width: 100vw;
   position: absolute;
   bottom: 0;
-  z-index: 1;
-  background-color: none;
+  z-index: -1;
 }
 
 @media screen and (max-width: 600px) {
-
   #portfolio {
     padding-top: 2em;
   }
@@ -183,5 +184,4 @@ section.hero .content {
   .portfolio-item:nth-of-type(even) {
     flex-direction: column-reverse;
   }
-
 }
