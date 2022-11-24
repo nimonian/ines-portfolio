@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <script
+      type="module"
+      src="main.js"
+      defer
+    ></script>
+    <title>ines .dev</title>
+  </head>
+  <body>
+    <header>
+      <a href="https://google.com">Contact</a>
+      <a href="https://google.com">About</a>
+      <a href="#portfolio">Portfolio</a>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="content">
+          <h1>
+            ines
+            <span id="dev">.dev</span>
+          </h1>
+          <p>Craftsmen in data and software</p>
+        </div>
+        <img
+          src="/wave-1.svg"
+          class="wave"
+        />
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <h2 style="text-align: center;">Our work</h2>
+        <!-- Openreach -->
+        <article class="portfolio-item">
+          <div class="hidable">
+            <a href="https://google.com">
+              <img
+                src="/portfolio-1.png"
+                alt="The Grand Central project dashboard"
+              />
+            </a>
+          </div>
+
+          <div class="portfolio-text hidable rtl">
+            <h3>BT OpenReach</h3>
+            <p>
+              A bespoke workflow management system, increasing transparency and
+              efficiency for the engineering team.
+            </p>
+          </div>
+        </article>
+        <!-- Mathematico -->
+        <article class="portfolio-item">
+          <div class="portfolio-text hidable ltr">
+            <h3>Mathematico</h3>
+            <p>
+              An ed-tech platform teaching mathematics with spaced-repetition,
+              realtime assessment and gamification.
+            </p>
+          </div>
+
+          <div class="hidable">
+            <a href="https://mathematico.org">
+              <img
+                src="/portfolio-2.png"
+                alt="The Mathematico dashboard"
+              />
+            </a>
+          </div>
+        </article>
+        <img
+          src="/waves-2.svg"
+          class="wave"
+        />
+      </section>
+
+      <!-- About -->
+      <section id="about"></section>
+    </main>
+  </body>
+</html>
