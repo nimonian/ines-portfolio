@@ -27,14 +27,12 @@ function heroCanvas() {
   canvas.width = window.innerWidth
   canvas.height = window.innerHeight
 
-  const stars = new Array(100).fill(null).map((_) => ({
+  const stars = new Array(300).fill(null).map((_) => ({
     x: canvas.width * Math.random(),
     y: canvas.height * Math.random(),
     radius: 1 + Math.random(),
   }))
-
-  console.log(stars)
-
+  
   const drawStars = (x, y) => {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     stars.forEach((star) => {
@@ -46,11 +44,12 @@ function heroCanvas() {
     })
   }
 
+  drawStars(0,0)
+
   document.querySelector('.hero').addEventListener('mousemove', (e) => {
     const rect = canvas.getBoundingClientRect()
     const x = e.clientX - rect.left
     const y = e.clientY - rect.top
-    console.log(x, y)
     drawStars(x, y)
   })
 }
